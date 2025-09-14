@@ -4,14 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kangiten Digital</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
-      <a href="#hero"><img src="https://ibb.co/DfrLcGX2" alt="Kangiten Digital Logo" class="logo-img"></a>
+      <a href="#hero">
+        <img src="https://i.ibb.co/YRF5QLc/Kangiten-Digital.png" alt="Kangiten Digital Logo" class="logo-img">
+      </a>
     </div>
     <ul class="nav-links">
       <li><a href="#hero">Home</a></li>
@@ -26,7 +32,7 @@
   <!-- Hero -->
   <header id="hero" class="hero">
     <h1>Empowering Brands with Digital Excellence</h1>
-    <p>We help businesses grow through Digital Marketing, SEO, Web Design, Branding, VFX, and 3D solutions.</p>
+    <p>We grow businesses with Digital Marketing, SEO, Web Design, Branding, VFX & 3D Solutions.</p>
     <a href="#services" class="btn-hero">Explore Services</a>
   </header>
 
@@ -34,23 +40,23 @@
   <section id="services">
     <h2>Our Services</h2>
     <div class="service-grid">
-      <div class="service-card"><i class="fa-solid fa-bullhorn"></i><h3>Digital Marketing</h3></div>
-      <div class="service-card"><i class="fa-solid fa-magnifying-glass-chart"></i><h3>SEO</h3></div>
-      <div class="service-card"><i class="fa-solid fa-laptop-code"></i><h3>Web Design & Development</h3></div>
-      <div class="service-card"><i class="fa-solid fa-pen-nib"></i><h3>Branding</h3></div>
-      <div class="service-card"><i class="fa-solid fa-film"></i><h3>Editing & VFX</h3></div>
-      <div class="service-card"><i class="fa-solid fa-cube"></i><h3>3D Design</h3></div>
+      <div class="service"><i class="fa-solid fa-bullhorn"></i><h3>Digital Marketing</h3></div>
+      <div class="service"><i class="fa-solid fa-magnifying-glass-chart"></i><h3>SEO</h3></div>
+      <div class="service"><i class="fa-solid fa-laptop-code"></i><h3>Web Design & Development</h3></div>
+      <div class="service"><i class="fa-solid fa-pen-nib"></i><h3>Branding</h3></div>
+      <div class="service"><i class="fa-solid fa-film"></i><h3>Editing & VFX</h3></div>
+      <div class="service"><i class="fa-solid fa-cube"></i><h3>3D Design</h3></div>
     </div>
   </section>
 
   <!-- Workflow -->
   <section id="workflow">
     <h2>Our Process</h2>
-    <div class="workflow-steps">
-      <div class="step-card"><span>01</span><h4>Research & Strategy</h4><p>Understanding your needs and building a plan.</p></div>
-      <div class="step-card"><span>02</span><h4>Creative Design</h4><p>Crafting visuals that connect with your audience.</p></div>
-      <div class="step-card"><span>03</span><h4>Development & Launch</h4><p>Turning ideas into reality and launching successfully.</p></div>
-      <div class="step-card"><span>04</span><h4>Marketing & Growth</h4><p>Helping your business grow after launch.</p></div>
+    <div class="steps">
+      <div class="step"><span>01</span> Research & Strategy</div>
+      <div class="step"><span>02</span> Creative Design</div>
+      <div class="step"><span>03</span> Development & Launch</div>
+      <div class="step"><span>04</span> Marketing & Growth</div>
     </div>
   </section>
 
@@ -58,49 +64,29 @@
   <section id="portfolio">
     <h2>Our Work</h2>
     <div class="portfolio-grid">
-      <div class="portfolio-item"><a href="project1.html"><img src="https://picsum.photos/400/300?random=1"><h3>Project 1</h3></a></div>
-      <div class="portfolio-item"><a href="project2.html"><img src="https://picsum.photos/400/300?random=2"><h3>Project 2</h3></a></div>
-      <div class="portfolio-item"><a href="project3.html"><img src="https://picsum.photos/400/300?random=3"><h3>Project 3</h3></a></div>
+      <div class="project"><img src="https://picsum.photos/400/300?random=10" alt="Project 1"><h3>Brand Campaign</h3></div>
+      <div class="project"><img src="https://picsum.photos/400/300?random=20" alt="Project 2"><h3>SEO Growth</h3></div>
+      <div class="project"><img src="https://picsum.photos/400/300?random=30" alt="Project 3"><h3>Web Design</h3></div>
+      <div class="project"><img src="https://picsum.photos/400/300?random=40" alt="Project 4"><h3>3D Visuals</h3></div>
     </div>
   </section>
 
-  <!-- Quote Form -->
-  <section id="quote-form">
-    <h2>Get a Quote</h2>
-    <p class="form-subtitle">Tell us about your project, and we’ll get back to you.</p>
+  <!-- Get a Quote -->
+  <section id="quote-form" class="quote">
+    <h2>Get a Free Quote</h2>
     <form>
-      <div class="form-group">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
-        <label for="service">Select Service</label>
-        <select id="service" name="service" required>
-          <option value="">-- Choose a Service --</option>
-          <option>Digital Marketing</option>
-          <option>SEO</option>
-          <option>Web Design & Development</option>
-          <option>Branding</option>
-          <option>Editing & VFX</option>
-          <option>3D Design</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="message">Project Details</label>
-        <textarea id="message" name="message" placeholder="Describe your project..." required></textarea>
-      </div>
-      <button type="submit" class="btn-submit">Submit Request</button>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Your Company" required>
+      <textarea placeholder="Project Details" required></textarea>
+      <button type="submit">Submit</button>
     </form>
   </section>
 
   <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: info@kangiten.com</p>
+    <p>Email: contact@kangiten.com</p>
     <p>Phone: +91 6301340006</p>
   </section>
 
@@ -109,6 +95,7 @@
     <p>© 2025 Kangiten Digital. All Rights Reserved.</p>
   </footer>
 
+  <!-- JS -->
   <script src="script.js"></script>
 </body>
 </html>
