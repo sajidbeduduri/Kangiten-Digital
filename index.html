@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">Kangiten Digital</div>
@@ -25,10 +26,10 @@
       <li><a href="#portfolio">Portfolio</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="btn-quote">Get a Quote</a>
+    <a href="#quote-form" class="btn-quote">Get a Quote</a>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section id="hero" class="hero">
     <div class="hero-content">
       <h1>Transforming Ideas into Digital Success</h1>
@@ -37,7 +38,7 @@
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services -->
   <section id="services">
     <h2>What We Do</h2>
     <div class="services-container">
@@ -74,7 +75,7 @@
     </div>
   </section>
 
-  <!-- Workflow Section -->
+  <!-- Workflow -->
   <section id="workflow">
     <h2>Our Process</h2>
     <div class="workflow-steps">
@@ -101,36 +102,76 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!-- Portfolio -->
   <section id="portfolio">
     <h2>Our Portfolio</h2>
     <div class="portfolio-grid">
       <div class="portfolio-item">
-        <img src="https://picsum.photos/400/300?random=11" alt="Project 1">
-        <h3>Project 1</h3>
+        <a href="project1.html">
+          <img src="https://picsum.photos/400/300?random=11" alt="Project 1">
+          <h3>Project 1</h3>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="https://picsum.photos/400/300?random=12" alt="Project 2">
-        <h3>Project 2</h3>
+        <a href="project2.html">
+          <img src="https://picsum.photos/400/300?random=12" alt="Project 2">
+          <h3>Project 2</h3>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="https://picsum.photos/400/300?random=13" alt="Project 3">
-        <h3>Project 3</h3>
+        <a href="project1.html">
+          <img src="https://picsum.photos/400/300?random=13" alt="Project 3">
+          <h3>Project 3</h3>
+        </a>
       </div>
       <div class="portfolio-item">
-        <img src="https://picsum.photos/400/300?random=14" alt="Project 4">
-        <h3>Project 4</h3>
+        <a href="project2.html">
+          <img src="https://picsum.photos/400/300?random=14" alt="Project 4">
+          <h3>Project 4</h3>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
     <div class="contact-info">
       <p><i class="fa-solid fa-envelope"></i> Email: kundan@gmail.com</p>
       <p><i class="fa-solid fa-phone"></i> Phone: +91 6301340006</p>
     </div>
+  </section>
+
+  <!-- Quote Form -->
+  <section id="quote-form">
+    <h2>Get a Free Quote</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="service">Service Interested In</label>
+        <select id="service" name="service" required>
+          <option value="">Select Service</option>
+          <option value="Digital Marketing">Digital Marketing</option>
+          <option value="SEO">SEO</option>
+          <option value="Web Design & Development">Web Design & Development</option>
+          <option value="Branding">Branding</option>
+          <option value="Editing & VFX">Editing & VFX</option>
+          <option value="3D Design">3D Design</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
   </section>
 
   <!-- Footer -->
