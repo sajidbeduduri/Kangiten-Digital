@@ -1,6 +1,6 @@
 /* General */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -8,23 +8,26 @@ body {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  background: #0d1117;
-  color: #fff;
+  padding: 15px 40px;
+  background: #0b0c10;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .navbar .logo {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 700;
-  color: #ff6f61;
+  color: #00ffd5;
 }
 
 .nav-links {
@@ -41,25 +44,26 @@ body {
 }
 
 .nav-links a:hover {
-  color: #ff6f61;
+  color: #00ffd5;
 }
 
 .btn-quote {
-  background: #ff6f61;
-  color: #fff;
+  background: #00ffd5;
+  color: #0b0c10;
   padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
   text-decoration: none;
-  border-radius: 6px;
   transition: 0.3s;
 }
 
 .btn-quote:hover {
-  background: #ff8577;
+  background: #00c4b3;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #0d1117, #1f1f2e);
+  background: linear-gradient(135deg, #0b0c10, #1f1f2e);
   color: #fff;
   text-align: center;
   padding: 120px 20px;
@@ -67,191 +71,148 @@ body {
 
 .hero h1 {
   font-size: 48px;
-  margin-bottom: 15px;
-  color: #ff6f61;
+  color: #00ffd5;
+  margin-bottom: 20px;
 }
 
 .hero p {
   font-size: 20px;
-  margin-bottom: 25px;
-  color: #f4f4f4;
+  margin-bottom: 30px;
+  color: #ccc;
 }
 
 .btn-hero {
-  background: #ff6f61;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 8px;
-  text-decoration: none;
+  background: #00ffd5;
+  color: #0b0c10;
+  padding: 12px 30px;
+  border-radius: 10px;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .btn-hero:hover {
-  background: #ff8577;
+  background: #00c4b3;
 }
 
 /* Services */
 #services {
   padding: 80px 20px;
   text-align: center;
-  background: #f7f7f7;
+  background: #f0f0f0;
 }
 
 #services h2 {
   font-size: 36px;
-  color: #0d1117;
   margin-bottom: 40px;
+  color: #0b0c10;
 }
 
-.service-grid {
+.services-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  gap: 25px;
 }
 
-.service {
+.service-card {
   background: #fff;
-  padding: 30px 20px;
+  padding: 25px 20px;
   border-radius: 12px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.service i {
-  font-size: 50px;
-  margin-bottom: 15px;
+.service-card i {
+  font-size: 45px;
   color: #ff6f61;
+  margin-bottom: 15px;
   transition: color 0.3s;
 }
 
-.service h3 {
+.service-card h3 {
   font-size: 20px;
-  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.service:hover {
+.service-card p {
+  color: #555;
+}
+
+.service-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   background: #ff6f61;
   color: #fff;
 }
 
-.service:hover i {
+.service-card:hover i {
   color: #fff;
+}
+
+.service-card:hover p {
+  color: #f0f0f0;
 }
 
 /* Workflow */
 #workflow {
-  background: #fff6f5;
   padding: 80px 20px;
   text-align: center;
+  background: #e0f7fa;
 }
 
 #workflow h2 {
   font-size: 36px;
-  color: #0d1117;
   margin-bottom: 40px;
 }
 
-.steps {
+.workflow-steps {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 25px;
 }
 
-.step {
-  background: #ff6f61;
-  color: #fff;
+.step-card {
+  background: #00ffd5;
   padding: 25px 20px;
   border-radius: 12px;
+  color: #0b0c10;
   width: 220px;
   font-weight: 600;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
-.step:hover {
-  transform: translateY(-8px);
+.step-card span {
+  font-size: 22px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
 }
 
-.step span {
-  font-weight: 700;
+.step-card h4 {
   font-size: 20px;
-  display: block;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  color: #0b0c10;
+  font-weight: 400;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
 }
 
 /* Portfolio */
 #portfolio {
   padding: 80px 20px;
   text-align: center;
-  background: #f7f7f7;
+  background: #f0f0f0;
 }
 
 #portfolio h2 {
   font-size: 36px;
-  color: #0d1117;
   margin-bottom: 40px;
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.project {
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.project h3 {
-  background: #ff6f61;
-  color: #fff;
-  margin: 0;
-  padding: 12px;
-  text-align: center;
-}
-
-.project:hover {
-  transform: translateY(-8px);
-}
-
-.project img:hover {
-  transform: scale(1.05);
-}
-
-/* Contact */
-#contact {
-  background: #0d1117;
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-#contact h2 {
-  font-size: 36px;
-  color: #ff6f61;
-  margin-bottom: 25px;
-}
-
-#contact p {
-  font-size: 18px;
-  margin: 8px 0;
-}
-
-/* Footer */
-footer {
-  background: #111;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-weight: 500;
-}
+ 
