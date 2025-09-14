@@ -1,13 +1,15 @@
-// Smooth scroll for nav links
+// Smooth scrolling for nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e){
+  anchor.addEventListener("click", function(e) {
     e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({behavior:"smooth"});
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
   });
 });
 
-// Scroll to quote form button
-document.querySelector('.btn-quote').addEventListener("click", function(e){
+// Simple form submission (demo only)
+document.querySelector("form")?.addEventListener("submit", e => {
   e.preventDefault();
-  document.querySelector('#quote-form').scrollIntoView({behavior:"smooth"});
+  alert("Thank you! We will contact you soon.");
 });
